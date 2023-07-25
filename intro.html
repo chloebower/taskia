@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Taskia Prototype</title>
+<link href="taskia.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+	<script>
+	function myFunction() {
+    var usernameID = document.getElementById("myText").value;
+	window.location.href = "classManager.html";		
+    }
+	</script>
+	<script type= "text/javascript" src="index.js"></script>
+	</head>
+	<body>
+	<ion-app>
+	<ion-nav root="nav-main"></ion-nav>
+	</ion-app>			
+	<ion-header>
+	</ion-header>
+	<ion-content fullscreen>	
+	<ion-content class="ion-padding">
+	<h3>Welcome to</h3>
+	<h1>Taskia!</h1>
+	<p>Taskia is the ultimate student<br>dashboard app to suit all your<br>study and planning needs!</p>
+	<h2>First, just tell us your name:</h2>
+	<form action="homepage.html" method="post">
+	<input type="text"  placeholder="Your Name" id="myText" name="myText">
+	<br><br><br>
+	<a input type="button" onclick="myFunction(); handleSubmit();">
+	<icon span class="icon material-icons">arrow_forward</icon>
+		</a>
+	</form>
+	</ion-content>
+	</ion-content>
+	<ion-footer>
+	<ion-toolbar>
+	</ion-toolbar>
+	</ion-footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>homepage</title>
+<link href="taskia.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script type="text/javascript" src="info.js"></script>
+</head>
+<body>
+	<ion-content fullscreen>	
+	<ion-content class="ion-padding">
+	<h3><div id="current_date"></div></h3>
+	<script>
+	date = new Date();
+		year = date.getFullYear();
+		month = date.getMonth() + 1;
+		day = date.getDate();
+		document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+	</script>
+	<h4>Hi <span id="result-name"></span>!</h4>
+	<p1>Here are your upcoming classes for today:</p1>
+	<br><br>
+	</ion-content>
+	</ion-content>
+	<nav class="nav">
+		<a href="#home" class="nav-link active" onclick="document.location='homepage.html'">
+		<span class="material-icons nav-icon">home</span>
+		<span class="nav-text">Home</span>
+		</a>
+		<a href="#tasks" class="nav-link" onclick="document.location='index.html'">
+		<span class="material-icons nav-icon">list</span>
+		<span class="nav-text">Tasks</span>
+		</a>
+		<a href="#calendar" class="nav-link" onclick="document.location='calendar.html'">
+		<span class="material-icons nav-icon">calendar_today</span>
+		<span class="nav-text">Calendar</span>
+		</a>
+		<a href="#timer" class="nav-link" onclick="document.location='timer.html'">
+		<span class="material-icons nav-icon">schedule</span>
+		<span class="nav-text">Timer</span>
+		</a>
+		<a href="#home" class="nav-link" onclick="document.location='homepage.html'">
+		<span class="material-icons nav-icon">edit</span>
+		<span class="nav-text">Notes</span>
+		</a>
+		</nav>		
+</body>
+</html>

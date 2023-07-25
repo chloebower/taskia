@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>classManager</title>
+<link href="taskia.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+	<script type="text/javascript" src="class.js"></script>
+	<script>
+	/*Open overlay*/
+	function openNav(){
+		document.getElementById("myNav").style.height="80%";
+	}
+	/*Close overlay*/
+	function closeNav(){
+		document.getElementById("myNav").style.height="0%";
+	}
+	</script>
+</head>
+
+<body>
+	<ion-header translucent>
+	</ion-header>
+	<ion-content fullscreen>
+	<ion-content class="ion-padding">
+	<h2>And what classes<br>are you taking?</h2>
+	<!--overlay-->	
+	<div id="myNav" class="overlay">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+		<form id="classesForm">
+			<input type="text" placeholder="class name" name="studentClass" id="studentClass"><br><br>
+			<input type="text" placeholder="teacher email" name="teacherEmail" id="teacherEmail">
+			<p><input type="radio" name="day" id="Sunday">S
+			<input type="radio" name="day" id="Monday">M
+			<input type="radio" name="day" id="Tuesday">T
+			<input type="radio" name="day" id="Wednesday">W
+			<input type="radio" name="day" id="Thursday">T
+			<input type="radio" name="day" id="Friday">F
+			<input type="radio" name="day" id="Saturday">S</p>
+			<p>Start Time: <input type="time" name="startTime" id="startTime"></p>
+			<p>Finish Time: <input type="time" name="finishTime" id="finishTime"></p>
+			<input type="submit" id="submit" value="Add Class" onClick="DisplayClasses">
+			</form>		
+		</div>
+		</div>
+		<div class="classTaken"></div>
+	<form>	
+	<ion-card>	
+	<a input type="button" onclick="openNav()" id="addClass" name="addClass">
+		<icon span class="icon material-icons">add</icon>
+		</a>
+	</ion-card>	
+	</form>	
+	<p></p>
+	<form>	
+	<ion-card>	
+	<a input type="button" onclick="document.location='homepage.html'">
+		<icon span class="icon material-icons">arrow_forward</icon>
+		</a>
+	</ion-card>
+	</form>	
+	</ion-content>
+	</ion-content>
+	
+</body>
+</html>
